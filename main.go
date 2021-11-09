@@ -15,7 +15,7 @@ func main() {
 	msg.Topic = "白"
 	msg.Value = sarama.StringEncoder("白")
 
-	producer, err := sarama.NewSyncProducer([]string{"0.0.0.0:9092"}, config)
+	producer, err := sarama.NewSyncProducer([]string{"121.196.163.8:9092"}, config)
 	if err != nil {
 		fmt.Println(err)
 		return
