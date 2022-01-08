@@ -14,7 +14,7 @@ func main() {
 
 	msg := &sarama.ProducerMessage{}
 	msg.Topic = "bai"
-	msg.Value = sarama.StringEncoder("bai")
+	msg.Value = sarama.StringEncoder("wxy")
 
 	producer, err := sarama.NewSyncProducer([]string{"121.196.163.8:9092"}, config)
 	if err != nil {
